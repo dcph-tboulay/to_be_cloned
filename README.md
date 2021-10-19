@@ -11,3 +11,7 @@ Output <- Input %>% filter(Date == today())
 Output <- Input %>% filter(Date >= (today() - days(1)))
 
 Output_today <- Output %>% filter(Date == today())
+
+# New experimental code block
+
+Output_tomorrow <- Output %>% filter(Date > today())
