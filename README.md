@@ -9,3 +9,5 @@ Output <- Input %>% filter(Date == today())
 # I'm now changing things
 
 Output <- Input %>% filter(Date >= (today() - days(1)))
+
+Output_today <- Output %>% filter(Date == today())
